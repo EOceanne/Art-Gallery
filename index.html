@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Art Gallery</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ <link rel="stylesheet" href="./css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+
+ <!-- navigation -->
+
+<ul class="nav nav-pills justify-content-end">
+ <li class="nav-item">
+  <a class="nav-link" href="./index.html">Home</a>
+ </li>
+ <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./artist.html" role="button"
+   aria-expanded="false">Artists</a>
+  <ul class="dropdown-menu">
+   <li><a class="dropdown-item" href="./frida.html">Frida Kahlo</a></li>
+   <li><a class="dropdown-item" href="./armetisia.html">Artemisia Gentileschi</a></li>
+   <li><a class="dropdown-item" href="./yayoi.html">Yayoi Kusama</a></li>
+   <li>
+   <li><a class="dropdown-item" href="./sonia.html">Sonia Delaunay</a></li>
+   <li><hr class="dropdown-divider"></li>
+   <li><a class="dropdown-item" href="./artist.html">More</a></li>
+  </ul>
+ </li>
+ <li class="nav-item">
+  <a class="nav-link" href="#submit">Submit</a>
+ </li>
+ <li class="nav-item">
+  <a class="nav-link" href="./about.html">About</a>
+ </li>
+ <li class="nav-item">
+  <a class="nav-link" href="./contact.html">Contact Us</a>
+ </li>
+ <li class="nav-item">
+
+<a class="btn btn-primary" href="./log-in.html" role="button">Log In</a>
+ </li>
+</ul>
+
+ <!-- header -->
+ <header>
+  <div class="main">
+   <div class="logo">
+    <img src="./img/actual-logo.png" width="600px" alt="logo">
+   </div>
+  </div>
+ </header>
+
+ <!-- about section -->
+ <div class="about">
+  <h2 class="about-title">About</h2>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae laudantium ab, dolor illum fugiat eius delectus
+   non aliquam! Praesentium commodi illo et quis non, vitae soluta nihil obcaecati esse veniam.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae laudantium ab, dolor illum fugiat eius delectus
+   non aliquam! Praesentium commodi illo et quis non, vitae soluta nihil obcaecati esse veniam.</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae laudantium ab, dolor illum fugiat eius delectus
+   non aliquam! Praesentium commodi illo et quis non, vitae soluta nihil obcaecati esse <a class="artist-more" href="./armetisia.html">more...</a>
+ </div><br><br><br><br>
+
+
+ <!-- Submit/near me -->
+ <div class="">
+  <div class="container-fluid submit">
+   <div class="row page-2 p-2">
+     <div class="col-sm-6 submit-content">
+      <div class="page3">
+     <h4 class="page3-title" id="submit">Submit an artist</h4>
+     <div class="card" style="width: 25rem;">
+      <div class="card-body">
+
+        <div class="container d-flex justify-content-center items-align-center pt-4">
+          <form action="action_page.php">
+            <label for="fname">Artist's name:</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="Enter artist's name"><br>
+
+            <label for="subject">Why are you suggesting this artist?</label><br>
+            <textarea id="subject" name="subject" placeholder="Write here.." style="height:130px; width: 300px;"></textarea><br>
+        
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Submit
+            </button>
+        
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Your Submitting an Artist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Something something something
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </form>
+        </div>
+      </div>
+     </div>
+    </div>
+    </div>
+    
+    <div class="col-sm-6 near-content">
+      <div class="page3-2">
+     <a href="./artist.html"><h4 class="page3-titleN">Artists</h4></a>
+     </div>        
+      </div>
+
+    </div>
+   </div>
+  </div>
+ </div><br><br><br>
+
+
+ <!-- footer  -->
+ 
+ <footer>
+  <div class="container-fluid footer">
+   <div class="row">
+    <div class="col-md-4 footer-link">
+     <h3 class="footer-title">More</h3><br>
+     <div>
+       <li>
+         <p class="footer-link"><a href="./index.html">Home</a></p></li>
+       <li>
+        <p><a href="./artist.html">Artists</a></p></li>
+       <li>
+        <p><a href="./about.html">About</a></p></li>
+       <li>
+        <p><a href="./log-in.html">Log in</a></p></li>
+     </ul>
+     </div>
+     <ul>
+    </div>
+    <div class="col-md-4">
+     <h3 class="footer-title">Contact</h3><br>
+     <p>+44 7911 123456</p>
+     <p>Customer@gpgallery.com</p>
+     <p>Social Media:</p>
+     <a href="./index.html"><img src="./img/instagram.png" alt="instagram" width="50px" height="50px"></a>
+     <a href="./index.html"><img src="./img/facebook.png" alt="instagram" width="50px" height="50px"></a>
+     <a href="./index.html"><img src="./img/twitter.png" alt="instagram" width="50px" height="50px"></a><br><br>
+     <a href="./contact.html" style="font-family: Righteous;">More</a>
+    </div>
+    <div class="col-md-4">
+     <h3 class="footer-title">Visit us</h3><br>
+     <p>123 Grove Park, London, SE11 1BU</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4974.8039613789015!2d0.016538227792902944!3d51.43241116849141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a9f46321ca97%3A0x855fce89267a7078!2sGrove%20Park!5e0!3m2!1sen!2suk!4v1657032064689!5m2!1sen!2suk"
+      width="350" height="200" style="border: 3px solid #D9c3c3;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+    </div>
+   </div>
+  </div>
+ </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
